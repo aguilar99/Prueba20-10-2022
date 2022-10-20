@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        function comprobarNumero(){
+            var numComprueba = document.getElementById('numTexto').value;
+            console.log(numComprueba);
+            if (numComprueba >=0 && numComprueba <=9){
+                //setTimeout();
+                
+                console.log("Va bien");
+            } else {
+                alert("Hay que poner un número entre 0 y 9");
+                location.reload();
+            }
+        }
+
+        function calculaTabla(){
+            for(let i=0; i<=10; i++){
+                    var result = i * numComprueba;     
+                                  
+                }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="number" id="numTexto" name="numTexto"><br>
+    </form>
+    <button onclick="comprobarNumero()">Comprueba número</button>
+    <table></table>
+</body>
+</html>
